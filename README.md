@@ -48,12 +48,7 @@ scrollHandler.onScroll((s) => {
 - **Fade**
 - **Scale**
 
-All are triggered via data attributes with configurable parameters:
-
-- `data-scroll-direction`
-- `data-scroll-strength`
-- `data-scroll-trigger`
-- `data-scroll-duration`
+All are triggered via data attributes with various configurable parameters
 
 ## Features
 
