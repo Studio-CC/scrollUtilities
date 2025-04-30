@@ -1,6 +1,6 @@
 # ScrollHandler
 
-A Lenis-powered smooth scroll handler for `Three.js` or DOM-based interactive experiences, with support for scroll animations, horizontal scrolling, and scroll-to triggers.
+A Lenis-powered smooth scroll handler for `with support for scroll animations, horizontal scrolling, and scroll-to triggers.
 
 ## Installation
 
@@ -66,8 +66,3 @@ All are triggered via data attributes with various configurable parameters
   - `resize()`
   - `initModules()`
   - `onScroll(callback)`
-
-## License
-
-MIT
-
