@@ -1,15 +1,18 @@
-ScrollHandler
+# ScrollHandler
 
-A Lenis-powered smooth scroll handler for Three.js or DOM-based interactive experiences, with support for scroll animations, horizontal scrolling, and scroll-to triggers.
+A Lenis-powered smooth scroll handler for `Three.js` or DOM-based interactive experiences, with support for scroll animations, horizontal scrolling, and scroll-to triggers.
 
-Installation
+## Installation
 
+```js
 import { ScrollHandler } from './ScrollModules/ScrollHandler'
+```
 
-Usage
+## Usage
 
-Configuration
+### Configuration
 
+```js
 const scrollHandlerSettings = {
 
   scrollBreakpoint: 1280,
@@ -22,63 +25,54 @@ const scrollHandlerSettings = {
   contentContainer: contentContainer,
 
 }
+```
 
-Initialization
+### Initialization
 
+```js
 const scrollHandler = ScrollHandler(scrollHandlerSettings)
+```
 
-Scroll Callback
+### Scroll Callback
 
+```js
 scrollHandler.onScroll((s) => {
   console.log('(Smooth) Scroll position:' + s)
 })
+```
 
-Available Scroll Animations
+## Available Scroll Animations
 
-Translate – Up, Down, Left, Right
-
-Stick
-
-Fade
-
-Scale
+- **Translate** – Up, Down, Left, Right
+- **Stick**
+- **Fade**
+- **Scale**
 
 All are triggered via data attributes with configurable parameters:
 
-data-scroll-direction
+- `data-scroll-direction`
+- `data-scroll-strength`
+- `data-scroll-trigger`
+- `data-scroll-duration`
 
-data-scroll-strength
+## Features
 
-data-scroll-trigger
+- Built on Lenis for smooth scrolling behavior
+- Native horizontal scroll support with breakpoint toggle
+- Scroll-triggered anchor jumps using `data-scroll-trigger`
+- Configurable:
+  - Scroll speed, strength, duration, easing
+  - Breakpoint to enable/disable Lenis
+  - Vertical/horizontal scroll mode
+- Returns multiple utility methods:
+  - `resetScroll()`
+  - `toggleHorizontalScroll()`
+  - `scrollTriggerHandler()`
+  - `resize()`
+  - `initModules()`
+  - `onScroll(callback)`
 
-data-scroll-duration
+## License
 
-Features
+MIT
 
-Built on Lenis for smooth scrolling behavior
-
-Native horizontal scroll support with breakpoint toggle
-
-Scroll-triggered anchor jumps using data-scroll-trigger
-
-Configurable:
-
-Scroll speed, strength, duration, easing
-
-Breakpoint to enable/disable Lenis
-
-Vertical/horizontal scroll mode
-
-Returns multiple utility methods:
-
-resetScroll()
-
-toggleHorizontalScroll()
-
-scrollTriggerHandler()
-
-resize()
-
-initModules()
-
-onScroll(callback)
